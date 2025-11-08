@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef2f3;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  padding: 10px;
+  width: 90%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.loading {
+  margin-top: 20px;
+}
+
+.spinner {
+  margin: 10px auto;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ccc;
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.question {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option-btn {
+  padding: 8px;
+  border-radius: 6px;
+  background: #423a3a;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #e0e0e0;
+}
+
+.explanation {
+  margin-top: 8px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+#result h3 {
+  margin-top: 15px;
+  color: #007bff;
+}
